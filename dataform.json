@@ -1,6 +1,12 @@
 {
     "warehouse": "bigquery",
-    "defaultSchema": "dataform",
-    "assertionSchema": "dataform_assertions",
-    "defaultDatabase": "project-bigdataiot-cloud"
+    "defaultSchema": "ds_bronze",
+    "assertionSchema": "ds_assert",
+    "defaultDatabase": "project-bigdataiot-cloud",
+    "vars": {
+		"bronze_dataset_name": "ds_bronze",
+	    "silver_dataset_name": "ds_silver",
+	    "gold_dataset_name": "ds_gold"
+	}
 }
+
