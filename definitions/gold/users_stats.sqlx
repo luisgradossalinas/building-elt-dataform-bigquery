@@ -6,6 +6,20 @@ config {
   assertions: {
     uniqueKey: ["user_id"],
     rowConditions: ["badge_count >= 0"]
+  },
+  columns: {
+    user_id: "User ID",
+    age: 'Age',
+    creation_date: "Creation date",
+    user_tenure: "User tenure",
+    badge_count : 'Badge count',
+    questions_and_answer_count : 'Count question and answer',
+    question_count : 'Question count',
+    answer_count : 'Answer count',
+    last_badge_received_at : 'Last badge',
+    last_posted_at : 'Last posted',
+    last_question_posted_at : 'Last question',
+    last_answer_posted_at : 'Last answer'
   }
 }
 
