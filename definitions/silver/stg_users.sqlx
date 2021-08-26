@@ -2,7 +2,13 @@
 config {
   type: "table",
   schema: dataform.projectConfig.vars.silver_dataset_name,
-  description: "Cleaned version of stackoverflow.users table"
+  description: "Cleaned version of stackoverflow.users table",
+  columns: {
+    user_id: "User ID",
+    age: "Age",
+    creation_date: "Date creation",
+    user_tenure: "User tenure"
+  }
 }
 
 select

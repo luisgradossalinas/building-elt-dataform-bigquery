@@ -8,6 +8,15 @@ config {
   description: "Combine both questions and answers into a single posts_all table",
   assertions: {
     uniqueKey: ["post_id"]
+  },
+  columns: {
+    post_id: "Post ID",
+    created_at: "Date creation",
+    type: "Type",
+    title: "Title",
+    body : 'Body',
+    owner_user_id : 'Owner ID',
+    parent_id : 'Parent ID'
   }
 }
 
