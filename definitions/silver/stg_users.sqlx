@@ -4,7 +4,7 @@ config {
   schema: dataform.projectConfig.vars.silver_dataset_name,
   description: "Cleaned version of users table.",
   assertions: {
-    rowConditions: ["age >= 25"]
+    rowConditions: ["user_tenure > 12"]
   },
   columns: {
     user_id: "User ID",
