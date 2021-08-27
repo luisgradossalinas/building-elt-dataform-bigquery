@@ -2,7 +2,10 @@
 config {
   type: "table",
   schema: dataform.projectConfig.vars.silver_dataset_name,
-  description: "Cleaned version of stackoverflow.users table",
+  description: "Cleaned version of users table.",
+  assertions: {
+    rowConditions: ["age >= 25"]
+  },
   columns: {
     user_id: "User ID",
     age: "Age",

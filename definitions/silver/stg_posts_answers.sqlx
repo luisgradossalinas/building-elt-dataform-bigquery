@@ -1,7 +1,7 @@
 config {
   type: "table",
   schema: dataform.projectConfig.vars.silver_dataset_name,
-  description: "Cleaned version of stackoverflow.posts_answers",
+  description: "Cleaned version of posts_answers",
   columns: {
     post_id: "Post ID",
     created_at: "Date creation",

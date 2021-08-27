@@ -1,7 +1,7 @@
 config {
   type: "table",
   schema: dataform.projectConfig.vars.silver_dataset_name,
-  description: "Cleaned version of stackoverflow.posts_questions",
+  description: "Cleaned version of posts_questions",
   columns: {
     post_id: "Post ID",
     created_at: "Date creation",
@@ -23,6 +23,4 @@ select
   parent_id
 from
   ${ref("posts_questions")}
-where
-  -- limit to recent data for the purposes of this demo project
-  creation_date >= timestamp("2019-01-01")
+where creation_date >= timestamp("2019-01-01")
