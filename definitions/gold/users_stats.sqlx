@@ -2,9 +2,6 @@ config {
   type: "table",
   schema: dataform.projectConfig.vars.gold_dataset_name,
   tags: ["daily"],
-  bigquery: {
-    partitionBy: "date(creation_date)"
-  },
   description: "Create a summary table for all users including statistics on questions, answeers and badges received.",
   assertions: {
     uniqueKey: ["user_id"],
