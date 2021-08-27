@@ -8,6 +8,9 @@ config {
     age: "Age",
     creation_date: "Date creation",
     user_tenure: "User tenure"
+  },
+  assertions: {
+    rowConditions: ["user_tenure < 12"]
   }
 }
 
